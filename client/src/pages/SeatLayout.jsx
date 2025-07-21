@@ -27,7 +27,7 @@ const handleSeatClick=(seatId) =>{
     return toast("please select time first")
   }
   if(!selectedSeats.includes(seatId) && selectedSeats.length >4){
-    return toast ("you can onlu chhose 5 seats")
+    return toast ("you can only chhose 5 seats")
   }
   setSelectedSeats(prev => prev.includes(seatId) ? prev.filter(seat => seat !== seatId) : [...prev,seatId])
 }
