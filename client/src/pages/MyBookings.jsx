@@ -3,6 +3,7 @@ import { dummyBookingData } from '../assets/assets'
 import BlurCircle from '../components/BlurCircle'
 import TimeFormat from '../lib/TimeFormat'
 import { dateFormat } from '../lib/DateFormat'
+
 const MyBookings = () => {
   const currency=import.meta.env.VITE_CURRENCY
   const [bookings,setBokkings]=useState([])
